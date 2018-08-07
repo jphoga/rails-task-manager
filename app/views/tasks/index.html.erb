@@ -1,0 +1,34 @@
+
+<div class="wrapper">
+
+  <h1>Task List</h1>
+  <% @tasks.each do |task| %>
+    <% if !task.completed %>
+
+    <div class="task">
+      <input type="checkbox" id="scales" name="feature" value="scales" unchecked />
+      <label for="scales">
+        <%= link_to task_path(task), :class => "link" do  %>
+          <p><%= task.title %></p>
+        <% end %>
+      </label>
+    </div>
+
+    <% else %>
+
+    <div class="task">
+      <input type="checkbox" id="scales" name="feature" value="scales" checked />
+      <label for="scales">
+        <%= link_to task_path(task), :class => "link" do  %>
+          <p><%= task.title %></p>
+        <% end %>
+      </label>
+    </div>
+
+    <% end %>
+  <% end %>
+
+
+  <%= link_to "Add new task", new_task_path, :class => "link real-link" %>
+
+</div>

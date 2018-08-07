@@ -1,0 +1,35 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper {
+  text-align: left;
+  height: 200px;
+  width: 300px;
+  margin-left:50px;
+  margin-top:30px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.real-link {
+  color: black;
+
+}
+
+.card {
+  margin: 20px 0;
+  padding-top: 20px;
+  padding-left: 5px;
+  background-color: #F7F8FA;
+  border-radius: 3px;
+  border-style: solid gray;
+  text-align: left;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
